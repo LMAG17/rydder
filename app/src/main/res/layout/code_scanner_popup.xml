@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/popup_background"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp"
+    app:cardCornerRadius="16dp">
+
+
+    <LinearLayout
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sku"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="#FF0000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/minusButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/minusbox"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/cant"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="cant" />
+
+            <ImageView
+                android:id="@+id/moreButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/morebox"
+                tools:ignore="VectorDrawableCompat" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/declineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_white_1000"
+                android:text="Cancelar"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_red_background">
+
+            </Button>
+
+            <Button
+                android:id="@+id/aceptButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/md_white_1000"
+                android:text="Aceptar"
+                android:layout_margin="16dp"
+                android:background="@drawable/button_blue_background">
+
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

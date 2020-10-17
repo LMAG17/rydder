@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "42554942847",
+    "firebase_url": "https://nami-b9cea.firebaseio.com",
+    "project_id": "nami-b9cea",
+    "storage_bucket": "nami-b9cea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:42554942847:android:15f3ad117d930772bd664a",
+        "android_client_info": {
+          "package_name": "com.chefmenu.nami"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "42554942847-m58uuvunsae07pbat9lrtmakmkedaplv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.chefmenu.nami",
+            "certificate_hash": "bba2ac1078aac8536239f6d946186b9bc25bf297"
+          }
+        },
+        {
+          "client_id": "42554942847-9lqnopak0oai0et7rilvh1i3lmk5hsv1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtY2R6oNY4znjM9QCpo1NxJyZa4hHImBU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "42554942847-9lqnopak0oai0et7rilvh1i3lmk5hsv1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

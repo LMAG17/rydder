@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/id_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/idProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+
+                    android:textColor="@color/utilColor"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Cant: " />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/cantTotal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:layout_margin="8dp"
+                android:layout_toEndOf="@id/tv_total"
+                android:layout_toRightOf="@id/tv_total"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pick_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="8dp"
+                android:layout_toStartOf="@+id/minusButton"
+                android:layout_toLeftOf="@+id/minusButton"
+                android:gravity="center"
+                android:text="Pick:" />
+
+            <ImageView
+                android:id="@+id/minusButton"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@id/cant"
+                android:layout_toLeftOf="@id/cant"
+                app:srcCompat="@drawable/minusbox"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/cant"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_toStartOf="@+id/moreButton"
+                android:layout_toLeftOf="@+id/moreButton"
+                android:gravity="center"
+                android:text="cant" />
+
+            <ImageView
+                android:id="@+id/moreButton"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                app:srcCompat="@drawable/morebox"
+                tools:ignore="VectorDrawableCompat" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
